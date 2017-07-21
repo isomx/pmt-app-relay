@@ -1,0 +1,19 @@
+schema {
+  query: RootType
+}
+
+# The admins for the group.
+type GroupAdmins {
+  # The Id of the group.
+  groupId: Int
+
+  # The id of the user.
+  userId: Int
+
+  # Whether or not this user is the primary admin for this groups.
+  primary: Boolean
+}
+
+type RootType {
+  groupAdmins(groupId: Int!): GroupAdmins
+}

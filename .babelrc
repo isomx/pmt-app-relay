@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "env"
+  ],
+  "plugins": [
+    "relay"
+  ]
+}
